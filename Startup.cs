@@ -72,7 +72,7 @@ namespace AuthServerJWT
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = rsa,
                         ValidAudience = "jwt-test",
-                        ValidIssuer = "jwt-test",
+                        ValidIssuer = "AuthServerJWT",
                         RequireSignedTokens = true,
                         RequireExpirationTime = true, // <- JWTs are required to have "exp" property set
                         ValidateLifetime = true, // <- the "exp" will be validated

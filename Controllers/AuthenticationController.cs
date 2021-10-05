@@ -56,7 +56,7 @@ namespace AuthServerJWT.Controllers
 
             var jwt = new JwtSecurityToken(
                 audience: "jwt-test",
-                issuer: "jwt-test",
+                issuer: "AuthServerJWT",
                 claims: claims,
                 notBefore: jwtDate,
                 expires: jwtDate.AddSeconds(60),
